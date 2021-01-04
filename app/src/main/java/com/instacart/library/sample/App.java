@@ -43,7 +43,7 @@ public class App extends Application {
                         .withLoggingEnabled(false)
                         .withSharedPreferencesCache(App.this)
                         .withConnectionTimeout(3_1428)
-                        .initialize();
+                        .reInitialize();
             } catch (IOException e) {
                 e.printStackTrace();
                 Log.e(TAG, "something went wrong when trying to initialize TrueTime", e);

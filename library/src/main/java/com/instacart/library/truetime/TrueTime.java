@@ -50,7 +50,7 @@ public class TrueTime {
     }
 
     public void reInitialize() throws IOException {
-        reInitialize(_ntpHost, true);
+        initialize(_ntpHost, true);
     }
 
     /**

@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.github.panpf.bintray-publish'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -32,3 +32,12 @@ dependencies {
 }
 
 group='com.github.instacart'
+
+publish {
+    userOrg = 'iwicfattis'
+    groupId = 'com.iwicfattis'
+    artifactId = 'truetime'
+    publishVersion = '3.5'
+    desc = 'issue121/resync'
+    website = 'https://github.com/mccccccmike/truetime-android'
+}
